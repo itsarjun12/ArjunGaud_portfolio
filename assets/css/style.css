@@ -1,24 +1,15 @@
-/**
-* Template Name: iPortfolio - v1.4.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: 	#000000;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #149ddd;
   text-decoration: none;
 }
 
@@ -37,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: #070b0e;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -69,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: #040614;
   overflow-y: auto;
 }
 
@@ -98,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
-  color: #fff;
+  background:	#000000;
+  color: #149ddd;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -161,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a i {
   font-size: 24px;
   padding-right: 8px;
-  color: #6f7180;
+  color: #4e1a1a;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -251,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #f30505;
 }
 
 @media (min-width: 1024px) {
@@ -333,19 +324,12 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #149ddd;
+  color: #dd6e14;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
-
-/*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-
-
-
 
 
 /*--------------------------------------------------------------
@@ -485,21 +469,56 @@ section {
 
 
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 
+.portfolio .icon-box {
+  margin-bottom: 20px;
+}
 
+.portfolio .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
+}
 
+.portfolio .icon i {
+  color: #fff;
+  font-size: 24px;
+}
 
+.portfolio .icon-box:hover .icon {
+  background: #fff;
+}
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
+.portfolio .icon-box:hover .icon i {
+  color: #0a140c;
+}
+.portfolio .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
 
+.portfolio .title a {
+  color: #343a40;
+}
 
+.portfolio .title a:hover {
+  color: #149ddd;
+}
 
-
+.portfolio .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -510,7 +529,7 @@ section {
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: #87cae9;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -521,7 +540,7 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #101213;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,97 +592,11 @@ section {
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .linkedin:hover i {
-  background: #149ddd;
+  background: #000000;
   color: #fff;
 }
 
-.contact .php-email-form {
-  width: 100%;
-  padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
 
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #149ddd;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
-}
 
 @-webkit-keyframes animate-loading {
   0% {
