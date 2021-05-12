@@ -1,3 +1,3 @@
 # My_portfolio.github.io
 My personal portfolio
-https://itsarjun12.github.io/Portfolio/
+https://itsarjun12.github.io/softdev/
